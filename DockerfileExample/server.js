@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 // Info about task
 const datetime = new Date();
 
-const message_info = `Docker Training | Homework 2
+const message_info = `Docker | Beginners
  - Server running at http://${HOST}:${PORT}/
  - TimeZone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}
  - Offset: ${datetime.getTimezoneOffset()}
@@ -38,7 +38,7 @@ for (var key in net_int) {
 
 // App
 const app = express();
-app.get('/info/', (req, res) => {
+app.get('/', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.end(message_info + network_info);
