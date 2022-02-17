@@ -1,13 +1,5 @@
-## OLD Configuration:
-# FROM node:14
-# WORKDIR /usr/src/app
-# COPY package.json ./
-# RUN npm install
-# COPY . .
-# EXPOSE 8080
-# CMD ["node", "server.js"]
+## Configuration:
 
-## FINAL PROJECT: 
 FROM node:14 AS build
 WORKDIR /home/src
 COPY package.json ./
