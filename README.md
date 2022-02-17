@@ -42,15 +42,16 @@ Working with Dockerfile.
 Build Image with Dockerfile
 Go to project folder and run the following commands:
 - `docker build .`
-- `docker build -t node-web-app:sandy.garcia .`
-- `docker run -d --name node-web-app -p 9090:8080 node-web-app:sandy.garcia`
+- `docker build -t node-web-app:beginners .`
+- `docker run -d --name node-web-app -p 9090:8080 node-web-app:beginners`
 - `docker ps`
 - `docker stop node-web-app`
 
 Docker.hub: https://hub.docker.com/repository/docker/ragyd/node-web-app
 Example upload an image to Docker Hub
 - `docker login`
-- `docker tag node-web-app:sandy.garcia ragyd/node-web-app:begginers`
-- `docker push ragyd/node-web-app:begginers`
+- `docker tag node-web-app:latest ragyd/node-web-app:beginners`
+- `docker push ragyd/node-web-app:beginners`
+
 Example Pull image:
-- `docker pull ragyd/node-web-app:begginers`
+- `docker pull ragyd/node-web-app:beginners`
